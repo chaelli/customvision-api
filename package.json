@@ -1,0 +1,25 @@
+{
+  "name": "customvision-api",
+  "version": "0.0.1",
+  "description": "A node package to use the customvision.ai api.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:chaelli/customvision-api"
+  },
+  "keywords": [
+    "customvision",
+    "microsoft",
+    "cognitive",
+    "services"
+  ],
+  "author": "Michael Keller",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "request": "^2.81.0"
+  }
+}
