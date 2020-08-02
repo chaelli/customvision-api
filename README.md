@@ -15,7 +15,7 @@ cv.sendImage(
     filePath,
     config,
     (data) => { console.log(data); },
-    (error) => { console.log(error) }
+    (error, responseBody, statusCode) => { console.log(error, responseBody, statusCode) }
 );
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "customvision-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A node package to use the customvision.ai api.",
   "main": "script.js",
   "scripts": {

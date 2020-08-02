@@ -23,10 +23,14 @@ function sendImage(filepath, config, successCallback, errorCallback = null) {
     };
 
     request.post(options, (err, httpResponse, body) => {
+        console.log();
         if (err && errorCallback) {
             errorCallback(err, body);
         }
-        else if (err) {
+        else if (httpResponse.statusCode != 200 && errorCallback) {
+            errorCallback(null, JSON.parse(body), httpResponse.statusCode)
+        }
+        else if (err || httpResponse.statusCode != 200) {
             successCallback(null);
         }
         else {
